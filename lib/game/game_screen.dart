@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:numbored/services/auth.dart';
 import 'package:numbored/shared/botom_nav.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:numbored/shared/utils.dart';
 
 class GameScreen extends StatefulWidget {
@@ -27,10 +27,10 @@ class _GameScreenState extends State<GameScreen> {
     [16, 17, 18, 19, 20],
   ];
 
-  final TextEditingController _controller = TextEditingController();
+  //final TextEditingController _controller = TextEditingController();
 
   Widget _buildGridItems(BuildContext context, int index) {
-    int gridStateLength = gridState.length;
+    //int gridStateLength = gridState.length;
     int x, y = 0;
     x = (index / 5).floor();
     y = (index % 5);
