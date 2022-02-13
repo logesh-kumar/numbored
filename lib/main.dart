@@ -1,6 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:numbored/home/home_screen.dart';
 import 'package:numbored/routes.dart';
 import 'package:numbored/theme.dart';
 
