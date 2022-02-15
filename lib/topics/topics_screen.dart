@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:numbored/services/srvices.dart';
+import 'package:numbored/services/services.dart';
 import 'package:numbored/shared/shared.dart';
 import 'package:numbored/topics/topic_item.dart';
 
@@ -12,7 +12,7 @@ class TopicsScreen extends StatelessWidget {
       future: FirestoreService().getTopics(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return const Loader();
+          return const LoadingScreen();
         } else if (snapshot.hasError) {
           return Center(
             child: ErrorMessage(message: snapshot.error.toString()),

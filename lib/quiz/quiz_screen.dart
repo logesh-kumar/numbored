@@ -21,7 +21,7 @@ class QuizScreen extends StatelessWidget {
           var state = Provider.of<QuizState>(context);
 
           if (!snapshot.hasData || snapshot.hasError) {
-            return const Loader();
+            return const LoadingScreen();
           } else {
             var quiz = snapshot.data!;
 
